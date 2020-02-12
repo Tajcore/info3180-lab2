@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block main %}
+<div class = "body">
+    <div class = "upper-bound">
+        <div class = "profile">
+            <img id = "profilepic" src = "{{url_for('static', filename ='images/sword.png')}}" >
+        </div> 
+        
+        <div>
+            <h3 id = "name">Tahjyei Thompson</h3>
+            <p id = "handle">@Tahj T</p>
+            <p id = "location">Kingston</p>
+            <p id = "datejoined">Joined {{ date_joined }}</p>
+        </div>
+    </div>
+
+    <div class = "lower-bound">
+        <div class = "description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae ipsum libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla in nisi varius, commodo diam at, placerat tellus. Mauris pretium leo sed dui iaculis, in vehicula ante porta.</p>
+        </div>
+        <div class = "statistics">
+            <div id = "posts">
+                <div><h3>7</h3></div>
+                <div><p class = "text">Posts</p></div>
+            </div>
+            <div id = "followingcount">
+                <div><h3>100</h3></div>
+                <div><p class = "text">Following</p></div>
+            </div>
+            <div id = "followerscount">
+                <div><h3>250</h3></div>
+                <div><p class = "text">Followers</p></div>
+            </div>
+        </div>
+        <div class = "buttongrp">
+            <div class = "btn">
+            <button type="button" class="btn btn-success">Follow</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
